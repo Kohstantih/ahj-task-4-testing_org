@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --env=jsdom --coverage --testPathPattern=./__test__/",
-    "e2e": "jest --env=node --testPathPattern=./e2e/ --runInBand",
+    "e2e": "jest --env=node --testPathPattern=./e2e/ --runInBand --detectOpenHandles",
     "lint": "eslint .",
     "build": "webpack",
     "serve": "webpack serve"
